@@ -1,0 +1,42 @@
+{
+  "name": "monitor",
+  "version": "1.0.0",
+  "description": "前端监控系统",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run server\" \"npm run renderer\" ",
+    "server": "cd server && nodemon app.js",
+    "renderer": "cd frontend && npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jason-xiewenqiang/monitor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jason-xiewenqiang/monitor/issues"
+  },
+  "homepage": "https://github.com/jason-xiewenqiang/monitor#readme",
+  "dependencies": {
+    "glob": "^7.1.7",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-compose": "^4.1.0",
+    "koa-cors": "0.0.16",
+    "koa-jwt": "^4.0.1",
+    "koa-router": "^10.0.0",
+    "koa-session": "^6.2.0",
+    "koa-static": "^5.0.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.9",
+    "wait-on": "^6.0.0"
+  }
+}
